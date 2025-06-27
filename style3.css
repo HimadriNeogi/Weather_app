@@ -13,42 +13,37 @@ body
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: url('img/background.jpg');
+	background: url('background.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
 }
 
 body.error{
-	background: url('img/background.jpg');
+	background: url('background.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
 }
 
 body.clear{
-	background: url('img/clear-bg.jpg');
+	background: url('clear-bg.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
 }
 
-body.drizzle{
-	background: url('img/drizzle-bg.jpg');
-	background-size: cover;
-	background-position: center;
-    transition: 1.5s ease;
-}
+
 
 body.rain{
-	background: url('img/rain-bg.jpg');
+	background: url('rain-bg.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
 }
 
 body.cloudy{
-	background: url('img/cloudy-bg.jpg');
+	background: url('cloudy-bg1.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
@@ -62,14 +57,14 @@ body.fog{
 }
 
 body.mist{
-	background: url('img/mist-bg.jpg');
+	background: url('mist-bg.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
 }
 
 body.haze{
-	background: url('img/haze-bg.jpg');
+	background: url('mist-bg.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
@@ -83,7 +78,7 @@ body.smoke{
 }
 
 body.snow{
-	background: url('img/snow-bg.jpg');
+	background: url('snow-bg.jpg');
 	background-size: cover;
 	background-position: center;
     transition: 1.5s ease;
@@ -100,7 +95,12 @@ body.snow{
 	backdrop-filter: blur(15px);
 	border: 2px solid rgba(255,255,255,.2);
 	color: #fff;
-	transition: height .5s ease;
+	transition: height .5s ease, transform .5s ease, box-shadow .5s ease;
+}
+
+.container:hover {
+	transform: scale(1.02);
+	box-shadow: 2px 2px 5px #050d47;
 }
 
 .searchbox
@@ -112,7 +112,6 @@ body.snow{
 	align-items: center;
 	border: 2px solid transparent;
 }
-
 
 .searchbox input
 {

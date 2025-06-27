@@ -6,7 +6,7 @@ document.addEventListener('keypress', function(event) {
 
     
 function getWeather(){
-	const APIKey = 'cc26a2b1c5a96763b6c3afa265fcca65';
+	const APIKey = '836f33eb981c9c9ae0df35f80345f719';
 	const city = document.querySelector('.searchbox input').value;
 	const container = document.querySelector('.container');
 	const weatherBox = document.querySelector('.weatherbox');
@@ -42,40 +42,40 @@ function getWeather(){
 
 			switch (json.weather[0].main) {
 				case 'Clear':
-					image.src = 'img/clear.png';
+					image.src = 'clear.png';
 					body.classList=['clear'];
 					break;
 				case 'Rain':
-					image.src = 'img/rain.png';
+					image.src = 'rain.png';
 					body.classList=['rain'];
 					break;
 				case 'Snow':
-					image.src = 'img/snow.png';
+					image.src = 'snow.png';
 					body.classList=['snow'];
 					break;
 				case 'Clouds':
-					image.src = 'img/cloudy.png';
+					image.src = 'cloudy.png';
 					body.classList=['cloudy'];
 					break;
                 case 'Fog':
-                        image.src = 'img/fog.png';
+                        image.src = 'mist.png';
                         body.classList=['fog'];
                         break;   
 				case 'Mist':
-                    image.src = 'img/mist.png';
+                    image.src = 'mist.png';
 					body.classList=['mist'];
 					break;
 				case 'Haze':
-					image.src = 'img/haze.png';
+					image.src = 'mist.png';
 					body.classList=['haze'];
 					break;
                 case 'Smoke':
-					image.src = 'img/smoke.png';
+					image.src = 'mist.png';
 					body.classList=['smoke'];
 					break;
 				default:
 					body.classList='';
-					image.src = 'img/search.png';
+					image.src = 'search.png';
 			}
 
 			temperature.innerHTML = `${Math.round(json.main.temp)}°C`; 
