@@ -122,7 +122,7 @@ body.snow{
 	background: transparent;
 	outline: none;
 	border-radius: 10px;
-	font-size: 22px;
+	font-size: 15px;
 	color: white;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -195,8 +195,8 @@ body.snow{
 .not-found.active .box
 {
 	transform: translateY(0%);
-	transition: transform 1s ease;
-	transition-delay: .5s;
+	transition: transform 3s ease;
+	transition-delay: .2s;
 }
 
 .weatherbox img
@@ -315,42 +315,4 @@ body.snow{
 	font-weight: 500;
 	margin-top: 12px;
 	color: white;
-}
-
-footer{
-    background-color: rgba(0, 0, 0, 0.658);
-    color: white;
-    font: .8rem sans-serif;
-    position: fixed;
-    overflow: hidden;
-    align-items: right;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    width: 25%;
-}
-
-footer a, footer i{
-    cursor: pointer;
-    color: white;
-    margin: 0 0.25rem 0 0;
-}
-
-footer a:hover, footer i:hover{
-    color: blue;
-}
-
-
-@media (max-width: 1080px) and (min-width: 600px) {
-    footer{
-        width: 35%;
-        font: 1rem sans-serif;
-    }     
-}
-
-@media (max-width: 600px) {
-
-footer{
-    width: 50%;
-}
 }
